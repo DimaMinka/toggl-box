@@ -32,7 +32,7 @@ async function main () {
   filterTag !== 'false' && filterQuery.push(`tag_ids=${filterTag}`)
   filterUser !== 'false' && filterQuery.push(`user_ids=${filterUser}`)
 
-  const apiEndpoint = `/weekly/?user_agent=tobimori%2Ftoggl-box&workspace_id=${workspaceId}&order_field=week_total&&order_desc=on&${filterQuery.join('&')}` // weekly endpoint
+  const apiEndpoint = `/weekly/?user_agent=dimaminka%2Ftoggl-box&workspace_id=${workspaceId}&order_field=week_total&&order_desc=on&${filterQuery.join('&')}` // weekly endpoint
 
   const togglRequest = await axios({
     method: 'get',
